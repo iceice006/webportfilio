@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 #navbar {
     background-color:#E64833;
 }
 
 #navbar a{
-    font-family: libre franklin;
-    font-size: 25px;
+    font-family: Anonymous Pro;
+    font-size: 20px;
     text-decoration-line: none;
     color: whitesmoke;
 }
@@ -14,8 +16,11 @@
 }
 
 #welcome h1{
-    font-family: libre franklin;
-    font-style: italic;
+    
+    font-family: "Anonymous Pro", monospace;
+    letter-spacing: 7px;
+    font-size: 75px;
+
 } 
 
 #landing{
@@ -23,14 +28,14 @@
 }
 
 #landing h2{
-    font-family: libre franklin;
+    font-family: Anonymous Pro;
     font-size: 30px;
     text-decoration-line: none;
     color: whitesmoke;
 
 }
 #landing p{
-    font-family: libre franklin;
+    font-family: Anonymous Pro;
     font-size: 20px;
     text-decoration-line: none;
     color: whitesmoke;
@@ -38,16 +43,19 @@
 
 #projects{
     background-color: #90AEAD;
-    font-family: libre franklin;
+    font-family: Anonymous Pro;
      font-size: 25px;
 }   
 
 #tools{
     background-color: #FBE9D0;
-    font-family: libre franklin;
+    font-family: Anonymous Pro;
      font-size: 25px;
 }
 
+#tools h4{
+      font-family: Anonymous Pro;
+}
 #tools img{
     width: 150px;
     height: 75px;
@@ -55,7 +63,7 @@
 
 #contact{
     background-color: #874f41;
-    font-family: libre franklin;
+    font-family: Anonymous Pro;
      font-size: 25px;
 }
 
@@ -63,3 +71,32 @@
     background-color: #FBE9D0 !important;
 }
 
+.icon-grid {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr); /* Two columns */
+           gap: 2px; /* Reduced space between icons */
+           justify-items: center;
+           align-items: center;
+       }
+       .icon-item {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 80px; /* Width of each icon box */
+           height: 80px; /* Height of each icon box */
+           background-color: #f8f9fa; /* Background color */
+           border-radius: 8px; /* Rounded corners */
+           padding: 5px; /* Padding inside icon box */
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for effect */
+       }
+       .icon-item i {
+           font-size: 1.5rem; /* Adjust icon size */
+       }
+       .section-heading {
+           margin-bottom: 30px;
+       }
+       .column-label {
+           font-size: 1.25rem;
+           font-weight: bold;
+           margin-bottom: 15px;
+       }

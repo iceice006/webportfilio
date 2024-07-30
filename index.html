@@ -9,17 +9,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+	<!-- font kits -->
+	<script src="https://kit.fontawesome.com/92788c4cde.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-	<nav id="navbar" class="navbar navbar-expand-lg  navbar-light sticky-top">
+	<nav id="navbar" class="navbar navbar-expand-lg  navbar-dark sticky-top">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -41,20 +43,19 @@
 
 	<div class="container-fluid py-5 " id="welcome">
 	        <div class="row text-center py-5 my-5">
-	            <div class="col-12 pt-md-5 text-dark">
-	                <h1>Welcome</h1>
-	                <p>To my portolio</p>
+	            <div class="col-12 text-dark w3-container w3-center w3-animate-opacity">
+	                <h1>Welcome to my page</h1>
 	            </div>
 	        </div>
 	    </div>
 
 	<!-- landing -->
-	<div class="container-fluid p-5" id="landing">
+	<div class="container-fluid p-5 " id="landing">
 	     <div class="row  justify-content-center">
-	         <div class=" col-sm-12 col-md-2 text-center text-md-start">
-	             <img src="./images/ice.jpg" class="img-fluid rounded-pill" width="250px" height="350px">
+	         <div class=" col-sm-12 col-md-2 text-center text-md-start ">
+	             <img src="./images/ice.jpg" class="img-fluid rounded-pill w3-animate-opacity" width="250px" height="350px">
 	         </div>
-	         <div class="py-5 col-sm-12 col-md-6 ">
+	         <div class="py-5 col-sm-12 col-md-6 w3-container w3-animate-opacity 	">
 	             <h2>Hi! I'm Isaiah Domingo.</h2>
 	             <p>I am an aspiring web developer. I was always interested in learning coding, but somehow when I try to learn on my own I feel like i have no derection so thats why i invested on myself and enrolled in a boot camp</p>
 	            
@@ -67,9 +68,9 @@
 	<!-- projects -->
 		<div id="projects" class="container-fluid p-5">
 		        <h1 class="text-center">Projects</h1>
-		        <div class="card-group">
+		        <div class="card-group w3-animate-opacity">
 		            <div class="card">
-		                <img src="./images/landing.png" class="card-img-top" alt="...">
+		               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./images/landing.png" class="card-img-top" alt="..."></a>
 		                <div class="card-body">
 		                    <h3 class="card-title">Payroll System</h3>
 		                    <p class="card-text">Developed a payroll system for a company that also manages employee attendance and computes payroll.</p>
@@ -77,7 +78,7 @@
 		                </div>
 		            </div>
 		            <div class="card">
-		                <img src="./images/landing.png" class="card-img-top" alt="...">
+		                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./images/landing.png" class="card-img-top" alt="..."></a>
 		                <div class="card-body">
 		                    <h3 class="card-title">E-commerce</h3>
 		                    <p class="card-text">Developed an online store for a small coffee business.</p>
@@ -85,7 +86,7 @@
 		                </div>
 		            </div>
 		            <div class="card">
-		                <img src="./images/landing.png" class="card-img-top" alt="...">
+		                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./images/landing.png" class="card-img-top" alt="..."></a>
 		                <div class="card-body">
 		                    <h3 class="card-title">Portfolio</h3>
 		                    <p class="card-text">Developed a portfolio showcasing an independent 3D artist </p>
@@ -96,65 +97,60 @@
 		    </div>
 
 	<!-- tools -->
-	<div class="container-fluid  p-5" id="tools">
-		<h1 class="text-center  m-5">Tools</h1>
-	        <div class="row p-5 m-5">
-	            <div id="fronted" class="p-3 col-12 col-md-4">
-	                <h2 class="">Frontend</h2>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        <img src="./images/html.png">
+	<div id="tools" class="container-fluid py-5">
+	        <h2 class="text-center section-heading">Tools</h2>
+	        <div class="row">
+	            <!-- Column 1 -->
+	            <div class="col-12 col-md-4 mb-4">
+	                <h4 class="column-label text-center">Frontend</h4>
+	                <div class="icon-grid">
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-js fa-2xl"></i>
 	                    </div>
-	                    <div class="col-3 icon-container">
-	                        <img src="./images/js.png">
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-html5 fa-2xl"></i>
 	                    </div>
-	                </div>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        <img src="./images/bs.png">
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-css3-alt fa-2xl"></i>
 	                    </div>
-	                    <div class="col-3 icon-container">
-	                       <img src="./images/css.png">
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div id="2nd" class="p-3 col-sm-12 col-md-4">
-	                <h2 class="px-4">MERN</h2>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        img1 
-	                    </div>
-	                    <div class="col-3 icon-container">
-	                        img2 
-	                    </div>
-	                </div>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        img3
-	                    </div>
-	                    <div class="col-3 icon-container">
-	                        img4 
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-react fa-2xl"></i>
 	                    </div>
 	                </div>
 	            </div>
-
-	            <div id="3rd" class=" p-3 col-12 col-md-4">
-	                <h2 class="">Other Tools</h2>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        img1 
+	            <!-- Column 2 -->
+	            <div class="col-12 col-md-4 mb-4">
+	                <h4 class="column-label text-center">Backend</h4>
+	                <div class="icon-grid">
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-node fa-2xl"></i>
 	                    </div>
-	                    <div class="col-3 icon-container">
-	                        img2 
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-angular fa-2xl"></i>
+	                    </div>
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-vuejs fa-2xl"></i>
+	                    </div>
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-python fa-2xl"></i>
 	                    </div>
 	                </div>
-	                <div class="row text-center">
-	                    <div class="col-3 icon-container">
-	                        img3 
+	            </div>
+	            <!-- Column 3 -->
+	            <div class="col-12 col-md-4 mb-4">
+	                <h4 class="column-label text-center">Other Tools</h4>
+	                <div class="icon-grid">
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-java fa-2xl"></i>
 	                    </div>
-	                    <div class="col-3 icon-container">
-	                        img4 
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-php fa-2xl"></i>
+	                    </div>
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-git fa-2xl"></i>
+	                    </div>
+	                    <div class="icon-item">
+	                        <i class="fa-brands fa-docker fa-2xl"></i>
 	                    </div>
 	                </div>
 	            </div>
@@ -163,55 +159,68 @@
 
 
 
-
-
-
-
 	
-	<!-- contact -->
-	<div id="contact" class="container-fluid p-5">
-	       <div class="row justify-content-center">
-	           <div class="col-12 col-md-8 col-lg-6">
-	               <div class="contact-section">
-	                   <h2 class="text-center">Contact Us</h2>
-	                   <form id="contactForm" action="#thankYouModal" method="post">
-	                       <div class="mb-3">
-	                           <label for="fullName" class="form-label">Full Name</label>
-	                           <input type="text" class="form-control" id="fullName" placeholder="John Doe" >
-	                       </div>
-	                       <div class="mb-3">
-	                           <label for="email" class="form-label">Email Address</label>
-	                           <input type="email" class="form-control" id="email" placeholder="example@example.com" >
-	                       </div>
-	                       <div class="mb-3">
-	                           <label for="message" class="form-label">Message</label>
-	                           <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." ></textarea>
-	                       </div>
-	                       <!-- Hidden submit button to trigger the modal -->
-	                       <button type="button" id="submitButton" class="btn w-100" data-bs-toggle="modal" data-bs-target="#thankYouModal">Send Message</button>
-	                   </form>
-	               </div>
-	           </div>
-	       </div>
-	   </div>
 
-	   <!-- Thank You Modal -->
-	   <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
-	       <div class="modal-dialog">
-	           <div class="modal-content">
-	               <div class="modal-header">
-	                   <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
-	                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	               </div>
-	               <div class="modal-body">
-	                   Thank you for contacting us. We will get back to you soon!
-	               </div>
-	               <div class="modal-footer">
-	                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	               </div>
-	           </div>
-	       </div>
-	   </div>
+   <!-- Contact Section -->
+       <div id="contact" class="container-fluid p-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+            	<!-- Social Media Links -->
+            	<div class="social-links text-center">
+            	    <a href="https://facebook.com" target="_blank" title="Facebook">
+            	        <i class="fa-brands fa-facebook fa-2xl"></i>
+            	    </a>
+            	    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+            	        <i class="fa-brands fa-linkedin fa-2xl"></i>
+            	    </a>
+            	    <a href="https://github.com" target="_blank" title="GitHub">
+            	        <i class="fa-brands fa-github fa-2xl"></i>
+            	    </a>
+                <div class="contact-section">
+                    </div>
+                    <h2 class="text-center">Contact Us</h2>
+                    <form id="contactForm" action="#thankYouModal" method="post">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."></textarea>
+                        </div>
+                        <!-- Hidden submit button to trigger the modal -->
+                        <button type="button" id="submitButton" class="text-dark btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#thankYouModal">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for contacting us. We will get back to you soon!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
