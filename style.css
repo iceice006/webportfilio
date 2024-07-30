@@ -1,0 +1,65 @@
+#navbar {
+    background-color:#E64833;
+}
+
+#navbar a{
+    font-family: libre franklin;
+    font-size: 25px;
+    text-decoration-line: none;
+    color: whitesmoke;
+}
+
+#welcome{
+    background-color: #FBE9D0;
+}
+
+#welcome h1{
+    font-family: libre franklin;
+    font-style: italic;
+} 
+
+#landing{
+    background-color: #244855;
+}
+
+#landing h2{
+    font-family: libre franklin;
+    font-size: 30px;
+    text-decoration-line: none;
+    color: whitesmoke;
+
+}
+#landing p{
+    font-family: libre franklin;
+    font-size: 20px;
+    text-decoration-line: none;
+    color: whitesmoke;
+}
+
+#projects{
+    background-color: #90AEAD;
+    font-family: libre franklin;
+     font-size: 25px;
+}   
+
+#tools{
+    background-color: #FBE9D0;
+    font-family: libre franklin;
+     font-size: 25px;
+}
+
+#tools img{
+    width: 150px;
+    height: 75px;
+}
+
+#contact{
+    background-color: #874f41;
+    font-family: libre franklin;
+     font-size: 25px;
+}
+
+#contact button{
+    background-color: #FBE9D0 !important;
+}
+
